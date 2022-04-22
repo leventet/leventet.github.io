@@ -1071,6 +1071,11 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 .perspective-512 {
@@ -2317,6 +2322,7 @@ a {
   z-index: 10;
   width: 10rem;
   height: 10rem;
+  cursor: crosshair;
 }
 
 .home-logo-shadow {
@@ -2365,6 +2371,31 @@ a {
   display: none;
   border-top-left-radius: 50%;
   mix-blend-mode: overlay;
+}
+
+.t-home-splash {
+  position: absolute;
+  left: -10%;
+  top: 120%;
+  right: 0%;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120%;
+  height: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #101010;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 991px) {
