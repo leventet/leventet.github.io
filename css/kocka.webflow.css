@@ -2214,6 +2214,7 @@ a {
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 24.11vw;
+    letter-spacing: -0.84vw;
   }
 
   .controls {
