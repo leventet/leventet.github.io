@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Thu Nov 24 2022 12:02:26 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Nov 24 2022 12:21:59 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="637e7a303bb75d0abf4c9bf6" data-wf-site="604bddaa3e5bf61569cefcab" lang="en">
 <head>
   <meta charset="utf-8">
@@ -55,8 +55,8 @@ body {
 	margin-right: auto !important;
   margin-left: auto !important;
 }
-/*
-Make the following elements inherit typography styles from the parent and not have hardcoded values.
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
 Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
 Uncomment this CSS to use it in the project. Leave this message for future hand-off.
 */
@@ -96,8 +96,8 @@ a,
 .hide {
   display: none !important;
 }
-@media screen and (max-width: 991px),
-  @media screen and (max-width: 767px),
+@media screen and (max-width: 991px), 
+  @media screen and (max-width: 767px), 
   @media screen and (max-width: 479px){
     .hide, .hide-tablet{
       display: none !important;
@@ -471,10 +471,10 @@ margin: 0rem !important;
   <script>
 function set_current_times() {
   const date_cph = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Europe/Copenhagen", hour12: false})
-  const date_bp = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Europe/Budapest", hour12: false})
+  const date_bp = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Europe/Budapest", hour12: false})  
   const date_sf = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "America/Los_Angeles", hour12: false})
   const date_nyc = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "America/New_York", hour12: false})
-	const date_tel_aviv = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Asia/Jerusalem", hour12: false})
+	const date_tel_aviv = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Asia/Jerusalem", hour12: false})  
   const date_tokyo = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Asia/Tokyo", hour12: false})
   return {
   date_cph,
