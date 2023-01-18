@@ -315,7 +315,7 @@ a {
   z-index: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/1339529866295-min.jpg');
+  background-image: url('../images/1339529866295-min.webp');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -349,8 +349,8 @@ a {
   z-index: 1;
   width: 100vw;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 10, 11, 0.47)), to(rgba(37, 10, 11, 0.47))), url('../images/why-am-I-here-min.jpg');
-  background-image: linear-gradient(180deg, rgba(37, 10, 11, 0.47), rgba(37, 10, 11, 0.47)), url('../images/why-am-I-here-min.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 10, 11, 0.47)), to(rgba(37, 10, 11, 0.47))), url('../images/why-am-I-here-min.webp');
+  background-image: linear-gradient(180deg, rgba(37, 10, 11, 0.47), rgba(37, 10, 11, 0.47)), url('../images/why-am-I-here-min.webp');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
 }
@@ -382,9 +382,9 @@ a {
   background-color: #101010;
   -webkit-transition: box-shadow 300ms ease, background-color 300ms ease;
   transition: box-shadow 300ms ease, background-color 300ms ease;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 300;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
   text-transform: uppercase;
   white-space: nowrap;
   cursor: none;
@@ -569,8 +569,8 @@ a {
 .button-svg-child {
   display: -ms-grid;
   display: grid;
-  margin-right: 8px;
-  margin-left: 8px;
+  margin-right: 10rem;
+  margin-left: 0.5rem;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -706,7 +706,7 @@ a {
   right: 92px;
   bottom: -17px;
   z-index: 6;
-  width: 60px;
+  width: 3.75rem;
   margin-right: 0.5%;
   margin-bottom: 0.5%;
 }
@@ -806,53 +806,8 @@ a {
   grid-template-rows: auto;
 }
 
-.glitch-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .glitch {
   position: relative;
-  font-size: 150px;
-  text-transform: uppercase;
-}
-
-.item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 25%;
-  height: 256px;
-  margin: 16px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 8px;
-  background-color: #b0c4ad;
-}
-
-.item-wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .container {
@@ -862,26 +817,6 @@ a {
   max-width: 75rem;
   margin-right: auto;
   margin-left: auto;
-}
-
-.selector {
-  width: 64px;
-  height: 64px;
-  margin: 16px;
-  border-radius: 8px;
-  background-color: #dd8585;
-}
-
-.selector.a2 {
-  background-color: #85c3dd;
-}
-
-.selector.a3 {
-  background-color: #bb85dd;
-}
-
-.selector.a4 {
-  background-color: #85dd85;
 }
 
 .section {
@@ -931,8 +866,10 @@ a {
   background-color: #101010;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 300;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
 }
 
 .svg-help:hover {
@@ -1009,12 +946,6 @@ a {
   perspective: 512px;
   -webkit-perspective-origin: 0% 0%;
   perspective-origin: 0% 0%;
-}
-
-.redbox {
-  width: 4rem;
-  height: 4rem;
-  background-color: red;
 }
 
 .think-wrap {
@@ -1483,6 +1414,11 @@ a {
   opacity: 0.4;
 }
 
+.home-overlay.pos-1 {
+  z-index: 1;
+  opacity: 1;
+}
+
 .lizome-splash-logo {
   position: relative;
   z-index: 10;
@@ -1829,14 +1765,20 @@ a {
 .grid-time {
   display: -ms-grid;
   display: grid;
+  height: 100%;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
   grid-column-gap: 1rem;
   grid-row-gap: 2rem;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto auto;
-  grid-template-rows: auto auto auto;
+  -ms-grid-rows: -webkit-max-content -webkit-max-content -webkit-max-content;
+  -ms-grid-rows: max-content max-content max-content;
+  grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content;
+  grid-template-rows: max-content max-content max-content;
   font-size: 0.75rem;
   font-weight: 500;
   white-space: nowrap;
@@ -1861,9 +1803,7 @@ a {
   bottom: 0%;
   z-index: -1;
   background-color: #282828;
-  opacity: 0.8;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  opacity: 0.65;
 }
 
 .wrapper-home {
@@ -1998,6 +1938,10 @@ a {
 .filter-invert {
   -webkit-filter: invert(100%);
   filter: invert(100%);
+}
+
+.h-100 {
+  height: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -2210,10 +2154,6 @@ a {
     margin-left: 0rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
-  }
-
-  .cursor-wrapper {
-    display: none;
   }
 
   .wrapper-home {
@@ -2586,6 +2526,17 @@ a {
   }
 }
 
+#w-node-_193c15ac-c238-8eed-36b8-dedfda1a3f34-8afeacac {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
 #w-node-_850635c1-bb10-c132-3c35-52e5224d61a9-bf4c9bf6 {
   -ms-grid-column: span 2;
   grid-column-start: span 2;
@@ -2777,20 +2728,6 @@ a {
   font-family: 'Helvetica Now Display';
   src: url('../fonts/HelveticaNowDisplay-Medium.woff2') format('woff2');
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Apercu Mono Pro';
-  src: url('../fonts/Apercu-Mono-Pro.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Apercu Mono Pro';
-  src: url('../fonts/Apercu-Mono-Pro-Light.otf') format('opentype');
-  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }

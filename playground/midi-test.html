@@ -1,10 +1,12 @@
-<!DOCTYPE html><!--  Last Published: Wed Dec 21 2022 00:16:23 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Wed Jan 18 2023 14:24:54 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61a3fb621ab29b2dba2a96a8" data-wf-site="604bddaa3e5bf61569cefcab" lang="en">
 <head>
   <meta charset="utf-8">
   <title>MIDI Test</title>
   <meta content="MIDI Test" property="og:title">
+  <meta content="https://uploads-ssl.webflow.com/604bddaa3e5bf61569cefcab/637f53e31f15993dc6a150f4_og.png" property="og:image">
   <meta content="MIDI Test" property="twitter:title">
+  <meta content="https://uploads-ssl.webflow.com/604bddaa3e5bf61569cefcab/637f53e31f15993dc6a150f4_og.png" property="twitter:image">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../css/webflow.css" rel="stylesheet" type="text/css">
@@ -41,6 +43,14 @@
   </div>
   <div class="custom-css w-embed">
     <style>
+.cursor-wrapper {
+	display:none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .cursor-wrapper {
+    display:flex;
+  }
+}
 .cursor-wrapper {
 	pointer-events: none;
 }
@@ -189,6 +199,10 @@ margin: 0rem !important;
 .padding-vertical {
   padding-right: 0rem !important;
   padding-left: 0rem !important;
+}
+*::selection{
+	color: #bfd1b9;
+	background: black;
 }
 </style>
   </div>

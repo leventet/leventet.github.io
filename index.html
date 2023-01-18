@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Wed Dec 21 2022 00:16:23 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Wed Jan 18 2023 14:24:54 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="637e7a303bb75d0abf4c9bf6" data-wf-site="604bddaa3e5bf61569cefcab" lang="en">
 <head>
   <meta charset="utf-8">
@@ -24,6 +24,14 @@
 <body>
   <div class="custom-css w-embed">
     <style>
+.cursor-wrapper {
+	display:none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .cursor-wrapper {
+    display:flex;
+  }
+}
 .cursor-wrapper {
 	pointer-events: none;
 }
@@ -173,9 +181,13 @@ margin: 0rem !important;
   padding-right: 0rem !important;
   padding-left: 0rem !important;
 }
+*::selection{
+	color: #bfd1b9;
+	background: black;
+}
 </style>
   </div>
-  <div class="wrapper-home">
+  <main class="wrapper-home">
     <div class="container-home">
       <div class="bg-blush lighten">
         <div class="padding-large">
@@ -232,7 +244,7 @@ margin: 0rem !important;
           </a>
         </div>
         <div id="w-node-_38a046ef-b1cb-8db6-ac33-cd1599495b7a-bf4c9bf6" class="pos-relative">
-          <div class="padding-large">
+          <div class="padding-large h-100">
             <div class="grid-time">
               <div id="w-node-f97cbf02-4653-d9b8-8b8f-9e878556d2f8-bf4c9bf6">
                 <div id="sf">Time</div>
@@ -267,6 +279,12 @@ margin: 0rem !important;
             <h2 class="margin-bottom margin-small">Works</h2>
             <a data-w-id="46ad6fda-6765-714d-d14f-0a06dc03fe2b" href="https://www.blueedenfoundation.com/" target="_blank" class="work-link crs-grow w-inline-block">
               <div>blue eden</div>
+              <div class="overflow-hidden">
+                <div style="-webkit-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
+              </div>
+            </a>
+            <a data-w-id="b935cc4c-0b6c-388a-7dcb-f072a44541bc" href="https://www.catchhealth.com/" target="_blank" class="work-link crs-grow w-inline-block">
+              <div>Catch Health</div>
               <div class="overflow-hidden">
                 <div style="-webkit-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
@@ -329,7 +347,7 @@ margin: 0rem !important;
         <div class="blush-abs"></div>
       </div>
     </div>
-  </div>
+  </main>
   <div class="cursor-wrapper">
     <div class="cursor"></div>
   </div>
