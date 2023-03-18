@@ -24,6 +24,22 @@
 <body>
   <div class="custom-css w-embed">
     <style>
+/* hover in effect */
+.work-link:hover .button-arrow {
+	transform: translate(0rem, 0rem);
+	transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(.165, .84, .44, 1);
+}
+/* hover out effect */
+.work-link .button-arrow {
+  transition-property: transform;
+  transition-duration: 400ms;
+	transition-timing-function: cubic-bezier(.77, 0, .175, 1);  
+}
+</style>
+  </div>
+  <div class="custom-css w-embed">
+    <style>
 .cursor-wrapper {
 	display:none;
 }
@@ -47,15 +63,31 @@ body {
 .pointer-events-on {
   pointer-events: auto;
 }
-/* Create a class of .div-square which maintains a 1:1 dimension of a div */
-.div-square::after {
-	content: "";
-	display: block;
-	padding-bottom: 100%;
-}
 .container {
 	margin-right: auto !important;
   margin-left: auto !important;
+}
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.display-none {
+  display: none !important;
 }
 .margin-0 {
   margin: 0rem !important;
@@ -219,58 +251,58 @@ margin: 0rem !important;
         <div id="w-node-_778bd9d6-598d-1bb0-0e09-b54ce39cd595-bf4c9bf6" class="bg-dkgray">
           <div class="padding-large">
             <h2 class="margin-bottom margin-small">Works</h2>
-            <a data-w-id="46ad6fda-6765-714d-d14f-0a06dc03fe2b" href="https://www.blueedenfoundation.com/" target="_blank" class="work-link crs-grow w-inline-block">
+            <a href="https://www.blueedenfoundation.com/" target="_blank" class="work-link crs-grow w-inline-block">
               <div>Palmetto</div>
               <div class="overflow-hidden">
-                <div style="-webkit-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
+                <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
-            <a data-w-id="638711c3-8e93-7a38-45c6-25a56865808d" href="https://www.blueedenfoundation.com/" target="_blank" class="work-link crs-grow w-inline-block">
+            <a href="https://www.blueedenfoundation.com/" target="_blank" class="work-link crs-grow w-inline-block">
               <div>blue eden</div>
               <div class="overflow-hidden">
-                <div style="-webkit-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
+                <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
-            <a data-w-id="b935cc4c-0b6c-388a-7dcb-f072a44541bc" href="https://www.catchhealth.com/" target="_blank" class="work-link crs-grow w-inline-block">
+            <a href="https://www.catchhealth.com/" target="_blank" class="work-link crs-grow w-inline-block">
               <div>Catch Health</div>
               <div class="overflow-hidden">
-                <div style="-webkit-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
+                <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
-            <a data-w-id="697ea219-aae0-d5d2-d427-b2a01301279d" href="https://kry10.com/" target="_blank" class="work-link crs-grow w-inline-block">
+            <a href="https://kry10.com/" target="_blank" class="work-link crs-grow w-inline-block">
               <div>Kry10</div>
               <div class="overflow-hidden">
-                <div style="-webkit-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
+                <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
-            <a data-w-id="eaffe879-7b6e-91b3-0ef7-21f57a590003" href="https://www.oneup.com/" target="_blank" class="work-link crs-grow w-inline-block">
+            <a href="https://www.oneup.com/" target="_blank" class="work-link crs-grow w-inline-block">
               <div>OneUp</div>
               <div class="overflow-hidden">
                 <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
-            <a data-w-id="ce31c9ba-7a8a-0eef-231a-3c857e8e8c6d" href="https://monbusinessassistant.com/expert-comptable/" target="_blank" class="work-link crs-grow w-inline-block">
+            <a href="https://monbusinessassistant.com/expert-comptable/" target="_blank" class="work-link crs-grow w-inline-block">
               <div>Mon Business Assistant</div>
               <div class="overflow-hidden">
-                <div style="-webkit-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
+                <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
-            <a data-w-id="9aa5c2e8-28e5-83f5-a7cf-f24275e5cd80" href="https://www.spray.marketing/" target="_blank" class="work-link crs-grow w-inline-block">
+            <a href="https://www.spray.marketing/" target="_blank" class="work-link crs-grow w-inline-block">
               <div>Spray marketing</div>
               <div class="overflow-hidden">
-                <div style="-webkit-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
+                <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
-            <a data-w-id="cc151391-8fa8-b569-d0de-6702f9cccd82" href="https://yepic.ai/" target="_blank" class="work-link crs-grow w-inline-block">
+            <a href="https://yepic.ai/" target="_blank" class="work-link crs-grow w-inline-block">
               <div>Yepic AI</div>
               <div class="overflow-hidden">
-                <div style="-webkit-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
+                <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
-            <a data-w-id="1bc8b520-6495-21e2-e55c-8351ececb4a5" href="https://whalar.com/" target="_blank" class="work-link crs-grow w-inline-block">
+            <a href="https://whalar.com/" target="_blank" class="work-link crs-grow w-inline-block">
               <div>Whalar</div>
               <div class="overflow-hidden">
-                <div style="-webkit-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1rem, 1rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
+                <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
           </div>
@@ -362,10 +394,10 @@ margin: 0rem !important;
   <script>
 function set_current_times() {
   const date_cph = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Europe/Copenhagen", hour12: false})
-  const date_bp = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Europe/Budapest", hour12: false})
+  const date_bp = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Europe/Budapest", hour12: false})  
   const date_sf = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "America/Los_Angeles", hour12: false})
   const date_nyc = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "America/New_York", hour12: false})
-	const date_tel_aviv = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Asia/Jerusalem", hour12: false})
+	const date_tel_aviv = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Asia/Jerusalem", hour12: false})  
   const date_tokyo = new Date().toLocaleString("en-US", {hour: '2-digit', minute:'2-digit', timeZone: "Asia/Tokyo", hour12: false})
   return {
   date_cph,

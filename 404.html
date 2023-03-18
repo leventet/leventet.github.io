@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Wed Jan 18 2023 14:24:54 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Sat Mar 18 2023 18:08:50 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="637f55aaecc39acd94da041e" data-wf-site="604bddaa3e5bf61569cefcab" lang="en">
 <head>
   <meta charset="utf-8">
@@ -40,35 +40,10 @@ body {
 .pointer-events-on {
   pointer-events: auto;
 }
-/* Create a class of .div-square which maintains a 1:1 dimension of a div */
-.div-square::after {
-	content: "";
-	display: block;
-	padding-bottom: 100%;
-}
 .container {
 	margin-right: auto !important;
   margin-left: auto !important;
 }
-/* 
-Make the following elements inherit typography styles from the parent and not have hardcoded values. 
-Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
-Uncomment this CSS to use it in the project. Leave this message for future hand-off.
-*/
-/*
-a,
-.w-input,
-.w-select,
-.w-tab-link,
-.w-nav-link,
-.w-dropdown-btn,
-.w-dropdown-toggle,
-.w-dropdown-link {
-  color: inherit;
-  text-decoration: inherit;
-  font-size: inherit;
-}
-*/
 /* Apply "..." after 3 lines of text */
 .text-style-3lines {
 	display: -webkit-box;
@@ -88,26 +63,9 @@ a,
   display: inline-flex;
 }
 /* These classes are never overwritten */
-.hide {
+.display-none {
   display: none !important;
 }
-@media screen and (max-width: 991px), 
-  @media screen and (max-width: 767px), 
-  @media screen and (max-width: 479px){
-    .hide, .hide-tablet{
-      display: none !important;
-    }
-  }
-  @media screen and (max-width: 767px)
-    .hide-mobile-landscape{
-      display: none !important;
-    }
-  }
-  @media screen and (max-width: 479px)
-    .hide-mobile{
-      display: none !important;
-    }
-  }
 .margin-0 {
   margin: 0rem !important;
 }
@@ -183,7 +141,7 @@ margin: 0rem !important;
   <div class="wrapper-home _404">
     <div class="_404-wrap">
       <div>The page you are looking for doesn&#x27;t exist.</div>
-      <a data-w-id="4eff21e6-4e62-87b4-784f-ab0f98274507" href="index.html" class="btn btn-wide w-inline-block">
+      <a data-w-id="4eff21e6-4e62-87b4-784f-ab0f98274507" href="index.html" class="btn btn-wide crs-grow w-inline-block">
         <div class="btn-text-wrap">
           <div style="-webkit-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="btn-text-parent">
             <div>Go back home</div>

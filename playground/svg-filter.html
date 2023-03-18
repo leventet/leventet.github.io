@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Wed Jan 18 2023 14:24:54 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Sat Mar 18 2023 18:08:50 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="609d6717a2ae364a8afeacac" data-wf-site="604bddaa3e5bf61569cefcab" lang="en">
 <head>
   <meta charset="utf-8">
@@ -70,35 +70,10 @@ body {
 .pointer-events-on {
   pointer-events: auto;
 }
-/* Create a class of .div-square which maintains a 1:1 dimension of a div */
-.div-square::after {
-	content: "";
-	display: block;
-	padding-bottom: 100%;
-}
 .container {
 	margin-right: auto !important;
   margin-left: auto !important;
 }
-/* 
-Make the following elements inherit typography styles from the parent and not have hardcoded values. 
-Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
-Uncomment this CSS to use it in the project. Leave this message for future hand-off.
-*/
-/*
-a,
-.w-input,
-.w-select,
-.w-tab-link,
-.w-nav-link,
-.w-dropdown-btn,
-.w-dropdown-toggle,
-.w-dropdown-link {
-  color: inherit;
-  text-decoration: inherit;
-  font-size: inherit;
-}
-*/
 /* Apply "..." after 3 lines of text */
 .text-style-3lines {
 	display: -webkit-box;
@@ -118,26 +93,9 @@ a,
   display: inline-flex;
 }
 /* These classes are never overwritten */
-.hide {
+.display-none {
   display: none !important;
 }
-@media screen and (max-width: 991px), 
-  @media screen and (max-width: 767px), 
-  @media screen and (max-width: 479px){
-    .hide, .hide-tablet{
-      display: none !important;
-    }
-  }
-  @media screen and (max-width: 767px)
-    .hide-mobile-landscape{
-      display: none !important;
-    }
-  }
-  @media screen and (max-width: 479px)
-    .hide-mobile{
-      display: none !important;
-    }
-  }
 .margin-0 {
   margin: 0rem !important;
 }
@@ -219,10 +177,7 @@ margin: 0rem !important;
         <div>⌘</div>
       </a>
       <a href="../playground/bubble.html" class="nav-button crs-grow w-inline-block">
-        <div>ה</div>
-      </a>
-      <a href="../playground/image-experiment.html" class="nav-button crs-grow w-inline-block">
-        <div>⏣</div>
+        <div>ב</div>
       </a>
       <a href="../playground/svg-filter.html" aria-current="page" class="nav-button crs-grow w-inline-block w--current">
         <div>◌</div>
@@ -230,7 +185,7 @@ margin: 0rem !important;
       <div class="glass-backdrop"></div>
     </div>
   </div>
-  <div data-w-id="88c8a13f-50b2-e991-2085-dd000b86741e" class="wrapper svg-wrap-small cursor-cross">
+  <div data-w-id="88c8a13f-50b2-e991-2085-dd000b86741e" class="wrapper svg-wrap-small">
     <div data-delay="4000" data-animation="cross" class="slider-wrap w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="2000" data-infinite="true">
       <div class="mask w-slider-mask">
         <div class="w-slide">
@@ -287,7 +242,7 @@ margin: 0rem !important;
       </div>
     </div>
     <div class="svg-help">
-      <div>On this page, you can play around with SVG filters. Not all filters work on every slide.</div>
+      <div>On this page, you can play around with SVG filters. Note that not all filters work on every slide.</div>
     </div>
     <div class="svg-grid"></div>
     <div class="hue-rotate display-none"></div>
