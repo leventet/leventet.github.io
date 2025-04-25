@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Wed Nov 08 2023 19:55:54 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Fri Apr 25 2025 10:17:43 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="637e7a303bb75d0abf4c9bf6" data-wf-site="604bddaa3e5bf61569cefcab" lang="en">
 <head>
   <meta charset="utf-8">
@@ -35,6 +35,46 @@
   transition-duration: 400ms;
 	transition-timing-function: cubic-bezier(.77, 0, .175, 1);  
 }
+/* hover in effect */
+.btn:hover .button-arrow-parent {
+	transform: translate(1.25rem, -1.25rem);
+	transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(.165, .84, .44, 1);
+}
+/* hover out effect */
+.btn .button-arrow-parent {
+  transition-property: transform;
+  transition-duration: 400ms;
+	transition-timing-function: cubic-bezier(.77, 0, .175, 1);  
+}
+/* hover in effect */
+.btn:hover .btn-text-parent {
+	transform: translate(0rem, -1rem);
+	transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(.165, .84, .44, 1);
+}
+/* hover out effect */
+.btn .btn-text-parent {
+  transition-property: transform;
+  transition-duration: 400ms;
+	transition-timing-function: cubic-bezier(.77, 0, .175, 1);  
+}
+</style>
+  </div>
+  <div class="custom-css w-embed">
+    <style>
+@keyframes dots1 {
+  0%   { opacity:0.5; }
+  25%  { opacity:0; }
+  50%  { opacity:0.5; }
+  75%  { opacity:1; }
+  100% { opacity:0.5; }
+}
+@keyframes dots2 {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
 </style>
   </div>
   <div class="custom-css w-embed">
@@ -52,12 +92,6 @@
 }
 body {
   text-rendering: optimizeLegibility;
-}
-.pointer-events-off {
-	pointer-events: none;
-}
-.pointer-events-on {
-  pointer-events: auto;
 }
 .container {
 	margin-right: auto !important;
@@ -77,85 +111,20 @@ body {
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }
-/* Adds inline flex display */
-.display-inlineflex {
-  display: inline-flex;
-}
 /* These classes are never overwritten */
 .display-none {
   display: none !important;
 }
-.margin-0 {
-  margin: 0rem !important;
-}
-.padding-0 {
-  padding: 0rem !important;
-}
-.spacing-clean {
-padding: 0rem !important;
-margin: 0rem !important;
-}
-.margin-top {
-  margin-right: 0rem !important;
-  margin-bottom: 0rem !important;
-  margin-left: 0rem !important;
-}
-.padding-top {
-  padding-right: 0rem !important;
-  padding-bottom: 0rem !important;
-  padding-left: 0rem !important;
-}
-.margin-right {
-  margin-top: 0rem !important;
-  margin-bottom: 0rem !important;
-  margin-left: 0rem !important;
-}
-.padding-right {
-  padding-top: 0rem !important;
-  padding-bottom: 0rem !important;
-  padding-left: 0rem !important;
-}
-.margin-bottom {
-  margin-top: 0rem !important;
-  margin-right: 0rem !important;
-  margin-left: 0rem !important;
-}
-.padding-bottom {
-  padding-top: 0rem !important;
-  padding-right: 0rem !important;
-  padding-left: 0rem !important;
-}
-.margin-left {
-  margin-top: 0rem !important;
-  margin-right: 0rem !important;
-  margin-bottom: 0rem !important;
-}
-.padding-left {
-  padding-top: 0rem !important;
-  padding-right: 0rem !important;
-  padding-bottom: 0rem !important;
-}
-.margin-horizontal {
-  margin-top: 0rem !important;
-  margin-bottom: 0rem !important;
-}
-.padding-horizontal {
-  padding-top: 0rem !important;
-  padding-bottom: 0rem !important;
-}
-.margin-vertical {
-  margin-right: 0rem !important;
-  margin-left: 0rem !important;
-}
-.padding-vertical {
-  padding-right: 0rem !important;
-  padding-left: 0rem !important;
-}
+/* Margin + Padding settings */
+.margin-bottom,.margin-horizontal,.margin-left,.margin-right{margin-top:0!important}.margin-horizontal,.margin-left,.margin-right,.margin-top{margin-bottom:0!important}.padding-bottom,.padding-horizontal,.padding-left,.padding-right{padding-top:0!important}.padding-horizontal,.padding-left,.padding-right,.padding-top{padding-bottom:0!important}.margin-bottom,.margin-left,.margin-top,.margin-vertical{margin-right:0!important}.margin-bottom,.margin-right,.margin-top,.margin-vertical{margin-left:0!important}.padding-bottom,.padding-left,.padding-top,.padding-vertical{padding-right:0!important}.padding-bottom,.padding-right,.padding-top,.padding-vertical{padding-left:0!important}.margin-0{margin:0!important}.padding-0{padding:0!important}
 *::selection{
 	color: #bfd1b9;
 	background: black;
 }
 </style>
+  </div>
+  <div class="cursor-wrapper">
+    <div class="cursor"></div>
   </div>
   <main class="wrapper-home">
     <div class="container-home">
@@ -168,43 +137,43 @@ margin: 0rem !important;
         <div id="w-node-_850635c1-bb10-c132-3c35-52e5224d61a9-bf4c9bf6">
           <div class="bg-midgray">
             <div class="padding-large">
-              <p class="p-home">*I’m a fully remote webflow developer with 4+ years of experience. Based in Europe, working worldwide.</p>
+              <p class="p-home">*I’m a fully remote webflow developer with 5+ years of experience. Based in Europe, working worldwide.</p>
             </div>
           </div>
           <div class="bg-blush">
             <div class="padding-large">
               <h2 class="c-midgray margin-bottom margin-small">Services</h2>
-              <p class="c-midgray">Figma to Webflow<br>Project management &amp; Upkeep<br>Custom Code solutions<br>Complex CMS structures<br>Technical SEO<br>UX/UI design<br>Page Speed Optimization<br>CCPA/GDPR Compliance<br>E-Footprint reduction (yes, it’s a thing!)<br>Accessibility Compliance<br>EAA/EN 301549, ADA, WCAG 2.1</p>
+              <p class="c-midgray">Figma to Webflow<br>Project management &amp; Upkeep<br>Custom Code solutions<br>Complex CMS structures<br>Technical SEO<br>UX/UI design<br>Page Speed Optimization<br>CCPA/GDPR Compliance<br>E-Footprint reduction<br>Accessibility Compliance<br>EAA/EN 301549, ADA, WCAG 2.1</p>
             </div>
           </div>
         </div>
         <div class="grid-home-links">
-          <a data-w-id="1931a6b5-accc-c6c4-2c1e-141b93e406b0" href="mailto:hello@lizome.xyz" class="btn crs-grow bg-dkgray sizing-grow w-inline-block">
+          <a href="mailto:hello@lizome.xyz" class="btn crs-grow bg-dkgray sizing-grow w-inline-block">
             <div class="btn-text-wrap">
-              <div style="-webkit-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="btn-text-parent">
+              <div class="btn-text-parent">
                 <div>Send me an e-mail</div>
                 <div>Send me an e-mail</div>
               </div>
             </div>
             <div class="button-arrow-outer">
               <div class="button-arrow-wrap">
-                <div style="-webkit-transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow-parent">
+                <div class="button-arrow-parent">
                   <div class="button-arrow"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
                   <div class="button-arrow _2nd"><img src="images/Arrow.png" loading="lazy" alt="Arrow pointing top right" class="arrow"></div>
                 </div>
               </div>
             </div>
           </a>
-          <a data-w-id="1afd4fa1-9663-8222-2b2d-98ef828779c1" href="https://www.linkedin.com/in/levente-terjeki/" target="_blank" class="btn crs-grow pos-relative sizing-grow w-inline-block">
+          <a href="https://www.linkedin.com/in/levente-terjeki/" target="_blank" class="btn crs-grow pos-relative sizing-grow w-inline-block">
             <div class="btn-text-wrap">
-              <div style="-webkit-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="btn-text-parent">
+              <div class="btn-text-parent">
                 <div>Find me on linkedin</div>
                 <div>Find me on linkedin</div>
               </div>
             </div>
             <div class="button-arrow-outer">
               <div class="button-arrow-wrap">
-                <div style="-webkit-transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow-parent">
+                <div class="button-arrow-parent">
                   <div class="button-arrow"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
                   <div class="button-arrow _2nd"><img src="images/Arrow.png" loading="lazy" alt="Arrow pointing top right" class="arrow"></div>
                 </div>
@@ -218,7 +187,7 @@ margin: 0rem !important;
             <div class="grid-time">
               <div id="w-node-f97cbf02-4653-d9b8-8b8f-9e878556d2f8-bf4c9bf6">
                 <div id="sf">Time</div>
-                <div>Palo Alto</div>
+                <div>San Francisco</div>
               </div>
               <div id="w-node-_37a7a239-bffc-f77b-d789-8ee8c3809f9e-bf4c9bf6">
                 <div id="nyc">Time</div>
@@ -259,14 +228,20 @@ margin: 0rem !important;
                 <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
-            <a href="https://www.blueedenfoundation.com/" target="_blank" class="work-link crs-grow w-inline-block">
-              <div>blue eden</div>
+            <a href="https://www.bigfoot.homes/" target="_blank" class="work-link crs-grow w-inline-block">
+              <div>Bigfoot Homes</div>
               <div class="overflow-hidden">
                 <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
-            <a href="https://www.catchhealth.com/" target="_blank" class="work-link crs-grow w-inline-block">
-              <div>Catch Health</div>
+            <a href="https://www.affineon.com/" target="_blank" class="work-link crs-grow w-inline-block">
+              <div>Affineon</div>
+              <div class="overflow-hidden">
+                <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
+              </div>
+            </a>
+            <a href="https://www.civio.ai/" target="_blank" class="work-link crs-grow w-inline-block">
+              <div>Civio</div>
               <div class="overflow-hidden">
                 <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
@@ -277,8 +252,8 @@ margin: 0rem !important;
                 <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
             </a>
-            <a href="https://www.motherwolflv.com/" target="_blank" class="work-link crs-grow w-inline-block">
-              <div>Mother Wolf</div>
+            <a href="https://www.funkela.com/" target="_blank" class="work-link crs-grow w-inline-block">
+              <div>Funke</div>
               <div class="overflow-hidden">
                 <div class="button-arrow work"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               </div>
@@ -318,14 +293,11 @@ margin: 0rem !important;
       </div>
     </div>
   </main>
-  <div class="cursor-wrapper">
-    <div class="cursor"></div>
-  </div>
   <div class="home-overlay">
     <div class="bg-dots-wrap">
-      <div style="opacity:0.5" class="bg-dots _1"></div>
-      <div style="opacity:1" class="bg-dots _2"></div>
-      <div style="opacity:1" class="bg-dots _4"></div>
+      <div class="bg-dots one"></div>
+      <div class="bg-dots two"></div>
+      <div class="bg-dots three"></div>
     </div>
   </div>
   <div id="popup-overlay" x-show="isPopupShown" style="display:none;opacity:0" class="popup-overlay-wrap">
@@ -336,14 +308,14 @@ margin: 0rem !important;
       </div>
       <a data-w-id="223de7dc-4bfe-d110-0b81-d3d699cc9681" href="#" class="btn w-inline-block">
         <div class="btn-text-wrap">
-          <div style="-webkit-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="btn-text-parent">
+          <div class="btn-text-parent">
             <div>I&#x27;m scared.</div>
             <div>Take me home!</div>
           </div>
         </div>
         <div class="button-arrow-outer">
           <div class="button-arrow-wrap rotate">
-            <div style="-webkit-transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0rem, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-arrow-parent">
+            <div class="button-arrow-parent">
               <div class="button-arrow"><img src="images/Arrow.png" loading="lazy" width="12" alt="Arrow pointing top right" class="arrow"></div>
               <div class="button-arrow _2nd"><img src="images/Arrow.png" loading="lazy" alt="Arrow pointing top right" class="arrow"></div>
             </div>
@@ -351,9 +323,9 @@ margin: 0rem !important;
         </div>
         <div class="bg-home-midgray"></div>
       </a>
-      <a data-w-id="1b527f9c-304b-7f42-96e6-39b5c2aa46a9" href="playground/cubes.html" class="btn bg-blush w-inline-block">
+      <a href="playground/cubes.html" class="btn bg-blush w-inline-block">
         <div class="btn-text-wrap">
-          <div style="-webkit-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="btn-text-parent">
+          <div class="btn-text-parent">
             <div>I&#x27;m ready.</div>
             <div>Let me in!</div>
           </div>
